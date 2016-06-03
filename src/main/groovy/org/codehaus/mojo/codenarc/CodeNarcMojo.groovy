@@ -399,6 +399,10 @@ log4j.appender.R.layout.ConversionPattern=%d{ISO8601} %c{1} [%t] %p - %m%n
       log.debug( "antReport => ${antReport}" )
       arg( value: antReport )
 
+      def ideReport = "-report=ide"
+      log.debug( "ideReport => ${ideReport}" )
+      arg( value: ideReport)
+
       def antRuleSets = "-rulesetfiles=" + cleanPath(rulesetfiles)
       log.debug( "antRuleSets => ${antRuleSets}" )
       arg( value: antRuleSets )
